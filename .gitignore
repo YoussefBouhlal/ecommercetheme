@@ -68,12 +68,8 @@ yarn.lock
 # Compiled Files and Build Dirs #
 ##########
 /README.html
-/build/
-/assets/dist/*/*.css
-/assets/dist/*/*.js
-/assets/dist/*/*.json
-mix-manifest.json
 /assets/dist/images/
+/assets/dist/bundled-assets/
 
 # PhpStrom Project Files #
 .idea/
