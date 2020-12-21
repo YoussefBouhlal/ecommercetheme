@@ -1,0 +1,69 @@
+.product-cart {
+    position: relative;
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__image {
+        margin-bottom: 1rem;
+        overflow: hidden;
+
+        &__content {
+            @mixin zoomIn {}
+        }
+    }
+
+    &__info {
+
+        &__title, &__price {
+            font-size: .8rem;
+            color: $black;
+
+            @mixin atSmall {
+                font-size: 1.2rem;
+            }
+        }
+        &__title {
+            font-weight: normal;
+            margin-bottom: .5rem;
+        }
+        &__price {
+            font-weight: bold;
+        }
+    }
+
+    &__heart {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: .5rem;
+
+        &__btn {
+            display: block;
+            border: none;
+            border-radius: 50%;
+            outline: none;
+            background-color: $white;
+            box-shadow: 0 0 10px 2px rgba(0,0,0,0.3);
+            padding: .2rem;
+
+            &:hover {
+                cursor: pointer;
+
+                & svg {
+                    stroke: $black;
+                    fill: $black;
+                }
+            }
+        }
+
+        &__image {
+            
+            & svg {
+                stroke: $black;
+                fill: none;
+            }
+        }
+    }
+}

@@ -21,3 +21,5 @@
 @import 'components/_header';
 @import 'components/index-page/_index-new-arrivals';
 @import 'components/index-page/_index-collections';
+@import 'components/index-page/_best-seller';
+@import 'components/product/_product-cart';
