@@ -73,8 +73,7 @@ yarn.lock
 /assets/dist/*/*.js
 /assets/dist/*/*.json
 mix-manifest.json
-/assets/images/*.jpg
-/assets/images/*/*.jpg
+/assets/dist/images/
 
 # PhpStrom Project Files #
 .idea/
