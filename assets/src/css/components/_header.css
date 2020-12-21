@@ -1,0 +1,59 @@
+.site-header {
+
+    &__container {
+        position: relative;
+    }
+    
+    &__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 20;
+    }
+
+    &__menu-icon {
+
+        svg{
+            stroke: $white;
+        }
+    }
+
+    &__logo {
+
+        svg{
+            fill: $white;
+        }
+    }
+
+    &__icons {
+        display: flex;
+
+        &__search, &__cart {
+            padding: 3px;
+
+        }
+
+        &__search {
+
+            svg{
+                fill: $white;
+            }
+        }
+
+        &__cart {
+            margin-left: 1rem;
+
+            svg{
+                fill: none;
+                stroke: $white;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,47 @@
+.collections {
+    padding: 2rem 0;
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: .16em;
+        color: $black;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        row-gap: 2rem;
+
+        @mixin atLarge {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &__item {
+
+        &__link {
+            text-decoration: none;
+        }
+
+        &__photo {
+            overflow: hidden;
+
+            &__content {
+                @mixin zoomIn {}
+            }
+        }
+
+        &__title {
+            font-size: 1.2rem;
+            font-weight: normal;
+            letter-spacing: .16em;
+            color: $black;
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
+}

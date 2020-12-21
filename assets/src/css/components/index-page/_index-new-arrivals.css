@@ -1,0 +1,82 @@
+.new-arrivals {
+    position: relative;
+
+    &__photo {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+
+        &__content {
+            height: 600px;
+
+            @mixin overlay {}
+            @mixin atMedium {
+                height: auto;
+                max-height: 800px;
+            }
+            
+            
+            & img {
+                width: auto;
+                
+                @mixin atMedium {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+        }
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-bottom: 2rem;
+
+        &__title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $white;
+            letter-spacing: .16em;
+
+            @mixin atLarge {
+                font-size: 2.2rem;
+            }
+        }
+
+        &__subtitle {
+            font-size: .9rem;
+            font-weight: bold;
+            color: $white;
+            margin-bottom: 2rem;
+
+            @mixin atLarge {
+                font-size: 1.2rem;
+            }
+        }
+
+        &__btn {
+            font-size: .9rem;
+            font-weight: bold;
+            color: $white;
+            letter-spacing: .16em;
+            background-color: transparent;
+            border: 1px solid $white;
+            border-radius: 3px;
+            outline: none;
+            padding: .5rem 1.5rem;
+
+            &:hover {
+                opacity: .8;
+                cursor: pointer;
+            }
+
+            @mixin atLarge {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    
+}
