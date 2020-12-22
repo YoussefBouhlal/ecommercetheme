@@ -18,6 +18,7 @@ const ManifestPlugin = require("webpack-manifest-plugin")
 const postCSSPlugins = [
     require("postcss-import"),
     require("postcss-mixins"),
+    require("postcss-calc"),
     require("postcss-simple-vars"),
     require("postcss-nested"),
     require("postcss-hexrgba"),
