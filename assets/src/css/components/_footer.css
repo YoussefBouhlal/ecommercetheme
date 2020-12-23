@@ -1,6 +1,4 @@
 .site-footer {
-    background-color: $black;
-    padding: 2rem 0;
 
     &__content {
         
@@ -11,19 +9,9 @@
     }
 
     &__about {
-        margin-bottom: 2rem;
 
         @mixin atMedium {
             margin-bottom: 0;
-        }
-
-        &__title {
-            @mixin fontSize 18px {
-                color: $white
-            }
-        }
-        &__text {
-            font-size: calc(10 + 4)px;
         }
     }
 
@@ -35,42 +23,20 @@
     }
 
     &__pages {
-        margin-bottom: 2rem;
 
         @mixin atMedium {
             margin-bottom: 0;
             margin-right: 2rem;
         }
-
-        &__title {
-
-        }
-        &__page {
-            
-            display: block;
-            text-decoration: none;
-            margin-bottom: .3rem;
-
-            &:hover {
-                opacity: .8;
-            }
-        }
     }
 
     &__media {
 
-        &__title {
-            
-        }
         &__content {
             display: flex;
         }
         &__link {
             padding: .3rem;
-
-            &:hover {
-                opacity: .8;
-            }
             
             & svg {
                 fill: $white;

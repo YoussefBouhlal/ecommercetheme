@@ -1,14 +1,4 @@
 .best-seller {
-    padding: 2rem 0;
-
-    &__title {
-        font-size: 1.5rem;
-        font-weight: bold;
-        letter-spacing: .16em;
-        color: $black;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
 
     &__content {
         display: grid;

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/*!--------------------------
+# Heading
+----------------------------*/
+h1,
+.h1 {
+    @mixin fontSize 32px {}
+    @mixin atLarge {
+        @mixin fontSize 36px {}
+    }
+}
+
+h2,
+.h2 {
+    @mixin fontSize 24px, 0.4px {}
+    @mixin atLarge {
+        @mixin fontSize 30px, 0.4px {}
+    }
+}
+
+h3,
+.h3 {
+    @mixin fontSize 18px, 0.3px {}
+    @mixin atLarge {
+        @mixin fontSize 22px, 0.3px {}
+    }
+}
+
+h4,
+.h4 {
+    @mixin fontSize 16px, 0.25px {}
+    @mixin atLarge {
+        @mixin fontSize 18px, 0.25px {}
+    }
+}
+
+h5,
+.h5 {
+    @mixin fontSize 10px {}
+    @mixin atLarge {
+        @mixin fontSize 12px {}
+    }
+}
+
+p,
+.p {
+    @mixin fontSize 14px {}
+    @mixin atLarge {
+        @mixin fontSize 16px {}
+    }
+}
+
+small,
+.small {
+    @mixin fontSize 8px {}
+}
+
+/*!--------------------------
+# Alignments
+----------------------------*/
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+
+/*!--------------------------
+# Modifiers
+----------------------------*/
+.text-normal {
+    font-weight: 400;
+}
+.text-bold {
+    font-weight: 700;
+}
+.text-semibold {
+    font-weight: 600;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.no-line-height {
+    line-height: 1em !important;
+}

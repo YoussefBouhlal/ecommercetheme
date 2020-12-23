@@ -10,7 +10,7 @@
 
     <a href="#" class="product-cart__link">
 
-        <div class="product-cart__image">
+        <div class="product-cart__image mb-2">
             <div class="product-cart__image__content">
                 <img srcset="<?php echo get_template_directory_uri() . '/assets/dist/images/product/product-small.jpg' ?> 450w,
                 <?php echo get_template_directory_uri() . '/assets/dist/images/product/product-medium.jpg' ?> 900w,
@@ -20,14 +20,14 @@
         </div>
         
         <div class="product-cart__info">
-            <p class="product-cart__info__title">Loose Textured T-shirt</p>
-            <p class="product-cart__info__price">$79.00</p>
+            <p class="product-cart__info__title text-black mb-1">Loose Textured T-shirt</p>
+            <p class="product-cart__info__price text-semibold text-black">$79.00</p>
         </div>
         
     </a>
 
     <div class="product-cart__heart">
-        <button class="product-cart__heart__btn">
+        <button class="product-cart__heart__btn bg-white">
             <div class="product-cart__heart__image">
                 <?php svg('heart'); ?>
             </div>

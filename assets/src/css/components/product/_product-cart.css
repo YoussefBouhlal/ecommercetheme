@@ -1,35 +1,11 @@
 .product-cart {
     position: relative;
 
-    &__link {
-        text-decoration: none;
-    }
-
     &__image {
-        margin-bottom: 1rem;
         overflow: hidden;
 
         &__content {
             @mixin zoomIn {}
-        }
-    }
-
-    &__info {
-
-        &__title, &__price {
-            font-size: .8rem;
-            color: $black;
-
-            @mixin atSmall {
-                font-size: 1.2rem;
-            }
-        }
-        &__title {
-            font-weight: normal;
-            margin-bottom: .5rem;
-        }
-        &__price {
-            font-weight: bold;
         }
     }
 
@@ -43,17 +19,12 @@
             display: block;
             border: none;
             border-radius: 50%;
-            outline: none;
-            background-color: $white;
-            box-shadow: 0 0 10px 2px rgba(0,0,0,0.3);
+            box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
             padding: .2rem;
 
-            &:hover {
-                cursor: pointer;
-
-                & svg {
-                    stroke: $black;
-                    fill: $black;
+            @mixin atLarge {
+                &:hover {
+                    cursor: pointer;
                 }
             }
         }

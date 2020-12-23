@@ -35,7 +35,5 @@ class Enqueue
             
         }
         
-        // Enqueue fonts
-        wp_enqueue_style( 'google-fonts', "https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Roboto&display=swap", false );
     }
 }

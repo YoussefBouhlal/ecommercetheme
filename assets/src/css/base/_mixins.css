@@ -48,8 +48,10 @@
 @define-mixin zoomIn {
     transition: all .3s ease-in;
     
-    &:hover {
-        transform: scale(1.2);
+    @mixin atLarge {
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }
 
@@ -60,5 +62,4 @@
     font-size: $size;
 	line-height: calc($size * 1.5);
     letter-spacing: $space;
-    @mixin-content;
 }

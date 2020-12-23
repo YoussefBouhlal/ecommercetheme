@@ -19,9 +19,9 @@
 
     <div class="new-arrivals__text">
         <div class="new-arrivals__text__content container">
-            <h2 class="new-arrivals__text__title">NEW ARRIVALS</h2>
-            <p class="new-arrivals__text__subtitle">best of the season</p>
-            <button class="new-arrivals__text__btn">SHOP NOW</button>
+            <h1 class="new-arrivals__text__title text-uppercase text-white text-semibold">new arrivals</h1>
+            <h4 class="new-arrivals__text__subtitle text-white text-normal">best of the season</h4>
+            <button class="new-arrivals__text__btn bg-transparent mt-4"><h4 class="text-uppercase text-white text-normal">shop now</h4></button>
         </div>
     </div>
 

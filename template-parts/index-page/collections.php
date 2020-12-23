@@ -6,12 +6,12 @@
  */
 ?>
 
-<div class="collections">
+<div class="collections mt-4 mb-4">
 
     <div class="container">
 
         
-        <h2 class="collections__title">COLLECTIONS</h2>
+        <h2 class="collections__title text-uppercase text-center text-black mb-4">collections</h2>
         
         <div class="collections__content">
 
@@ -21,25 +21,25 @@
                     'href'   => '#',
                     'src'    => 'man',
                     'alt'    => 'man',
-                    'title'  => 'MEN'
+                    'title'  => 'men'
                 ),
                 array(
                     'href'   => '#',
                     'src'    => 'woman',
                     'alt'    => 'woman',
-                    'title'  => 'WOMEN'
+                    'title'  => 'women'
                 ),
                 array(
                     'href'   => '#',
                     'src'    => 'boy',
                     'alt'    => 'boy',
-                    'title'  => 'BOY'
+                    'title'  => 'boys'
                 ),
                 array(
                     'href'   => '#',
                     'src'    => 'girl',
                     'alt'    => 'girl',
-                    'title'  => 'GIRL'
+                    'title'  => 'girls'
                 ),
             );
 
@@ -55,7 +55,7 @@
                                             alt="<?php echo $item['alt'] ?>">
                             </div>
                         </div>
-                        <h4 class="collections__item__title"><?php echo $item['title'] ?></h4>
+                        <h3 class="collections__item__title text-uppercase text-center text-semibold text-black mt-2"><?php echo $item['title'] ?></h3>
                     </a>
                 </div>
             <?php

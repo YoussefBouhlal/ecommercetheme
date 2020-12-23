@@ -1,0 +1,28 @@
+/*!-------------
+Text
+---------------*/
+.text-white {
+    color: $white;
+}
+.text-black {
+    color: $black;
+}
+.text-gray {
+    color: $gray;
+}
+.text-softGray {
+    color: $softGray;
+}
+
+/*!-------------
+Background
+---------------*/
+.bg-white {
+    background-color: $white;
+}
+.bg-black {
+    background-color: $black;
+}
+.bg-transparent {
+    background-color: transparent;
+}

@@ -1,0 +1,16 @@
+a {
+    display: block;
+    
+    &,
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+
+    @mixin atLarge {
+        &:hover {
+            opacity: .8;
+            cursor: pointer;
+        }
+    }
+}
