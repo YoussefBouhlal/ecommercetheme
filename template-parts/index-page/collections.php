@@ -6,12 +6,12 @@
  */
 ?>
 
-<div class="collections mt-4 mb-4">
+<div class="collections mt-32 mb-32">
 
     <div class="container">
 
         
-        <h2 class="collections__title text-uppercase text-center text-black mb-4">collections</h2>
+        <h2 class="collections__title text-uppercase text-center text-black mb-32">collections</h2>
         
         <div class="collections__content">
 
@@ -55,7 +55,7 @@
                                             alt="<?php echo $item['alt'] ?>">
                             </div>
                         </div>
-                        <h3 class="collections__item__title text-uppercase text-center text-semibold text-black mt-2"><?php echo $item['title'] ?></h3>
+                        <h3 class="collections__item__title text-uppercase text-center text-semibold text-black mt-16"><?php echo $item['title'] ?></h3>
                     </a>
                 </div>
             <?php

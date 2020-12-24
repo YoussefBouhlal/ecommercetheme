@@ -6,12 +6,12 @@
  */
 ?>
 
-<div class="best-seller mt-4 mb-4">
+<div class="best-seller mt-32 mb-32">
 
     <div class="container">
 
         
-        <h2 class="best-seller__title text-uppercase text-center text-black mb-4">best sellers</h2>
+        <h2 class="best-seller__title text-uppercase text-center text-black mb-32">best sellers</h2>
         
         <div class="best-seller__content">
 

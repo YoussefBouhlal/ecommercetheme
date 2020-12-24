@@ -18,7 +18,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> >
+<body <?php body_class('bg-white'); ?> >
 <?php wp_body_open(); ?>
 
 <div id="page" class="site">
@@ -29,7 +29,7 @@
 
             <div class="site-header__container">
 
-                <div class="site-header__content">
+                <div class="site-header__content <?php echo (is_home()) ? "site-header__content--absolute" : "" ?>">
 
                     <div class="site-header__menu-icon">
                         <?php svg( 'menu' ); ?>

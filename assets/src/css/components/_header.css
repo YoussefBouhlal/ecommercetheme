@@ -5,11 +5,6 @@
     }
     
     &__content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -18,16 +13,14 @@
     }
 
     &__menu-icon {
-
         svg{
-            stroke: $white;
+            stroke: $black;
         }
     }
 
     &__logo {
-
         svg{
-            fill: $white;
+            fill: $black;
         }
     }
 
@@ -36,13 +29,11 @@
 
         &__search, &__cart {
             padding: 3px;
-
         }
 
         &__search {
-
             svg{
-                fill: $white;
+                fill: $black;
             }
         }
 
@@ -51,7 +42,28 @@
 
             svg{
                 fill: none;
+                stroke: $black;
+            }
+        }
+    }
+
+    &__content--absolute {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        .site-header__menu-icon,
+        .site-header__icons__cart {
+            svg{
                 stroke: $white;
+            }
+        }
+    
+        .site-header__logo,
+        .site-header__icons__search {
+            svg{
+                fill: $white;
             }
         }
     }

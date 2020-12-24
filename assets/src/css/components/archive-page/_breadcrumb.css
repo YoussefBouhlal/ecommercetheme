@@ -1,0 +1,11 @@
+.breadcrumb {
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__filter {
+        border: none;
+    }
+}

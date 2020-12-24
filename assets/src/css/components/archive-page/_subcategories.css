@@ -1,0 +1,51 @@
+.subcategories {
+
+    &__wrapper {
+        position: relative;
+    }
+    
+    &__left-arrow,
+    &__right-arrow {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        z-index: 20;
+
+        &__btn {
+            height: 100%;
+            border: none;
+            box-shadow: 0 0 5px 1px rgba(0,0,0,0.1);
+        }
+    }
+
+    &__left-arrow {
+        left: 0;
+    }
+
+    &__content {
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+
+        &__scroll {
+            position: relative;
+            left: 0;
+            width: fit-content;
+            display: flex;
+            transition: all .3s ease;
+        }
+
+        &__item {
+            display: flex;
+        }
+    }
+
+    &__right-arrow {
+        right: 0;
+
+        & svg {
+            transform: rotate(180deg);
+        }
+    }
+
+}

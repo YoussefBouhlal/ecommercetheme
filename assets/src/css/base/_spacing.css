@@ -1,109 +1,133 @@
 /*!-------------
 Padding
 ---------------*/
-.pt-1 {
-    padding-top: $s1;
-}
-.pt-2 {
-    padding-top: $s2;
-}
-.pt-3 {
-    padding-top: $s3;
-}
 .pt-4 {
     padding-top: $s4;
 }
+.pt-8 {
+    padding-top: $s8;
+}
+.pt-16 {
+    padding-top: $s16;
+}
+.pt-24 {
+    padding-top: $s24;
+}
+.pt-32 {
+    padding-top: $s32;
+}
 
-.pr-1 {
-    padding-right: $s1;
-}
-.pr-2 {
-    padding-right: $s2;
-}
-.pr-3 {
-    padding-right: $s3;
-}
 .pr-4 {
     padding-right: $s4;
 }
+.pr-8 {
+    padding-right: $s8;
+}
+.pr-16 {
+    padding-right: $s16;
+}
+.pr-24 {
+    padding-right: $s24;
+}
+.pr-32 {
+    padding-right: $s32;
+}
 
-.pb-1 {
-    padding-bottom: $s1;
-}
-.pb-2 {
-    padding-bottom: $s2;
-}
-.pb-3 {
-    padding-bottom: $s3;
-}
 .pb-4 {
     padding-bottom: $s4;
 }
+.pb-8 {
+    padding-bottom: $s8;
+}
+.pb-16 {
+    padding-bottom: $s16;
+}
+.pb-24 {
+    padding-bottom: $s24;
+}
+.pb-32 {
+    padding-bottom: $s32;
+}
 
-.pl-1 {
-    padding-left: $s1;
-}
-.pl-2 {
-    padding-left: $s2;
-}
-.pl-3 {
-    padding-left: $s3;
-}
 .pl-4 {
     padding-left: $s4;
+}
+.pl-8 {
+    padding-left: $s8;
+}
+.pl-16 {
+    padding-left: $s16;
+}
+.pl-24 {
+    padding-left: $s24;
+}
+.pl-32 {
+    padding-left: $s32;
 }
 
 /*!-------------
 Margin
 ---------------*/
-.mt-1 {
-    margin-top: $s1;
-}
-.mt-2 {
-    margin-top: $s2;
-}
-.mt-3 {
-    margin-top: $s3;
-}
 .mt-4 {
     margin-top: $s4;
 }
+.mt-8 {
+    margin-top: $s8;
+}
+.mt-16 {
+    margin-top: $s16;
+}
+.mt-24 {
+    margin-top: $s24;
+}
+.mt-32 {
+    margin-top: $s32;
+}
 
-.mr-1 {
-    margin-right: $s1;
-}
-.mr-2 {
-    margin-right: $s2;
-}
-.mr-3 {
-    margin-right: $s3;
-}
 .mr-4 {
     margin-right: $s4;
 }
+.mr-8 {
+    margin-right: $s8;
+}
+.mr-16 {
+    margin-right: $s16;
+}
+.mr-24 {
+    margin-right: $s24;
+}
+.mr-32 {
+    margin-right: $s32;
+}
 
-.mb-1 {
-    margin-bottom: $s1;
-}
-.mb-2 {
-    margin-bottom: $s2;
-}
-.mb-3 {
-    margin-bottom: $s3;
-}
 .mb-4 {
     margin-bottom: $s4;
 }
+.mb-8 {
+    margin-bottom: $s8;
+}
+.mb-16 {
+    margin-bottom: $s16;
+}
+.mb-24 {
+    margin-bottom: $s24;
+}
+.mb-32 {
+    margin-bottom: $s32;
+}
 
-.ml-1 {
-    margin-left: $s1;
-}
-.ml-2 {
-    margin-left: $s2;
-}
-.ml-3 {
-    margin-left: $s3;
-}
 .ml-4 {
     margin-left: $s4;
+}
+.ml-8 {
+    margin-left: $s8;
+}
+.ml-16 {
+    margin-left: $s16;
+}
+.ml-24 {
+    margin-left: $s24;
+}
+.ml-32 {
+    margin-left: $s32;
 }
