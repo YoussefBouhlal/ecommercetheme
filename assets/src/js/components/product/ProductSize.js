@@ -39,19 +39,19 @@ class ProductSize
 
             /* Create inside "custom-select" a div that will act as the selected item */
             a = document.createElement("DIV");
-            a.setAttribute( "class", "single-product__sizes__select__selected text-gray pt-8 pb-8 pr-16 pl-16" );
+            a.setAttribute( "class", "single-product__sizes__select__selected text-gray bg-with pt-8 pb-8 pr-16 pl-16" );
             a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
             x[i].appendChild(a);
 
             /* Create a div that will contain the option list*/
             b = document.createElement("DIV");
-            b.setAttribute( "class", "select-items select-hide" );
+            b.setAttribute( "class", "single-product__sizes__select__items select-hide bg-white" );
 
             for ( j=0; j<ll; j++ ){
 
                 /* Create div that will act as an option*/
                 c = document.createElement("DIV");
-                c.setAttribute( "class", "option")
+                c.setAttribute( "class", "option text-black pt-8 pb-8 pl-16 pr-16")
                 c.innerHTML = selElmnt.options[j].innerHTML;
 
                 b.appendChild(c);
@@ -106,7 +106,7 @@ class ProductSize
     closeAllSelect( elmnt )
     {
         let x, y, i, xl, yl, arrNo = [];
-        x = document.querySelectorAll( ".select-items" );
+        x = document.querySelectorAll( ".single-product__sizes__select__items" );
         y = document.querySelectorAll( ".single-product__sizes__select__selected" );
         xl = x.length;
         yl = y.length;
