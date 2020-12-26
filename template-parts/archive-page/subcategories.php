@@ -47,10 +47,12 @@
                     );
                     foreach( $items as $item ){
                         ?>
-                            <div class="subcategories__content__item mt-24 mb-24 mr-8 ml-8">
-                                <p class="subcategories__content__item__title text-black mr-4"><?php echo $item['title']; ?></p>
-                                <p class="subcategories__content__item__number text-black">(<?php echo $item['number']; ?>)</p>
-                            </div>
+                            <a href="#">
+                                <div class="subcategories__content__item mt-24 mb-24 mr-8 ml-8">
+                                    <p class="subcategories__content__item__title text-black mr-4"><?php echo $item['title']; ?></p>
+                                    <p class="subcategories__content__item__number text-black">(<?php echo $item['number']; ?>)</p>
+                                </div>
+                            </a>
                         <?php
                     }
                     ?>

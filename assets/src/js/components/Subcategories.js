@@ -23,11 +23,19 @@ class Subcategories
         this.rightArrow.addEventListener( 'click', () => this.moveScroll(-40) );
     }
 
+    /*
+    *when the size of the screen changed
+    */
     onResize()
     {
-        this.handleButtons( 0 );
+        let current = this.contentScroll.offsetLeft;
+        this.handleButtons( current );
     }
 
+    /*
+    *show or hide button depend of th position of the contentScroll
+    *@param left    position of the left side of th contentScroll
+    */
     handleButtons( left )
     {
         if ( left >= 0 ){
@@ -36,7 +44,7 @@ class Subcategories
             this.leftArrow.style.display = 'block';
         }
 
-        let width = this.contentScroll.getBoundingClientRect().right + 10;
+        let width = this.contentScroll.getBoundingClientRect().right;
         let parentWidth = this.content.getBoundingClientRect().right;
         
         if ( width <= parentWidth ){
@@ -46,6 +54,9 @@ class Subcategories
         }
     }
 
+    /*
+    *move the contentScroll left or right depend of the button clicked
+    */
     moveScroll( val )
     {
         let current = this.contentScroll.offsetLeft;

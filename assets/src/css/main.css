@@ -28,6 +28,8 @@
 @import 'components/index-page/_index-new-arrivals';
 @import 'components/index-page/_index-collections';
 @import 'components/index-page/_best-seller';
-@import 'components/product/_product-cart';
 @import 'components/archive-page/_breadcrumb';
 @import 'components/archive-page/_subcategories';
+@import 'components/archive-page/_products';
+@import 'components/product/_product-cart';
+@import 'components/product/_single-product';

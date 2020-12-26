@@ -89,6 +89,9 @@ small,
 .text-uppercase {
     text-transform: uppercase;
 }
+.text-line-through {
+    text-decoration: line-through;
+}
 .no-line-height {
     line-height: 1em !important;
 }

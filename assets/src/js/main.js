@@ -5,5 +5,7 @@ if (module.hot) {
 }
 
 import Subcategories from './components/Subcategories';
+import ProductSize from './components/product/ProductSize';
 
 new Subcategories();
+new ProductSize();

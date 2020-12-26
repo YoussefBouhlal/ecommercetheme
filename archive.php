@@ -13,6 +13,7 @@ get_header();
     <?php
     get_template_part( 'template-parts/archive-page/breadcrumb' );
     get_template_part( 'template-parts/archive-page/subcategories' );
+    get_template_part( 'template-parts/archive-page/products' );
     ?>
 
 </main>
