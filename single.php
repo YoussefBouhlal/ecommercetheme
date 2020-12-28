@@ -11,21 +11,48 @@ get_header();
 <main class="main-site" role="main">
 
     <div class="single-product">
+        <div class="container">
 
-        <div class="single-product__images mb-8">
-            <div class="single-product__images__demo"></div>
+            <div class="single-product__images mb-8">
+                <div class="single-product__images__main">
+                    <div class="single-product__images__main--carousel">
+                        <div class="single-product__images__main__content">
+                            <img srcset="<?php echo get_template_directory_uri() . '/assets/dist/images/product/product-medium.jpg' ?> 400w,
+                                <?php echo get_template_directory_uri() . '/assets/dist/images/product/product-large.jpg' ?> 600w" 
+                                alt="product">
+                        </div>
+                        <div class="single-product__images__main__content">
+                            <img srcset="<?php echo get_template_directory_uri() . '/assets/dist/images/product/product-medium-red.jpg' ?> 400w,
+                                <?php echo get_template_directory_uri() . '/assets/dist/images/product/product-large-red.jpg' ?> 600w" 
+                                alt="product">
+                        </div>
+                        <div class="single-product__images__main__content">
+                            <img srcset="<?php echo get_template_directory_uri() . '/assets/dist/images/product/product-medium-green.jpg' ?> 400w,
+                                <?php echo get_template_directory_uri() . '/assets/dist/images/product/product-large-green.jpg' ?> 600w" 
+                                alt="product">
+                        </div>
+                    </div>
+                </div>
 
-            <div class="single-product__images__main">
-                <div class="single-product__images__main__content">
-                    <img srcset="<?php echo get_template_directory_uri() . '/assets/dist/images/product/product-medium.jpg' ?> 400w,
-                        <?php echo get_template_directory_uri() . '/assets/dist/images/product/product-large.jpg' ?> 600w" 
-                        alt="product">
+                <div class="single-product__images__thumbs">
+                    <div class="single-product__images__thumbs--carousel">
+                        <div class="single-product__images__main__content">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/dist/images/product/product-small.jpg' ?>" 
+                                alt="product">
+                        </div>
+                        <div class="single-product__images__main__content">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/dist/images/product/product-small-red.jpg' ?>" 
+                                alt="product">
+                        </div>
+                        <div class="single-product__images__main__content">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/dist/images/product/product-small-green.jpg' ?>" 
+                                alt="product">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="single-product__info">
-            <div class="container">
+            <div class="single-product__info">
 
                 <p class="single-product__category text-bold text-black mb-8">T-shirts</p>
 
@@ -58,6 +85,7 @@ get_header();
                 </div>
 
             </div>
+
         </div>
 
     </div>

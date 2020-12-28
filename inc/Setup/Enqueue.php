@@ -22,16 +22,17 @@ class Enqueue
         if( strstr( $_SERVER['SERVER_NAME'], 'local' ) ) {
 
             // Enqueue styles & scripts in development mode
-            wp_enqueue_script( 'main-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true );
+            wp_enqueue_script( 'main-js', 'http://localhost:3000/bundled.js', ['jquery'], '1.0', true );
 
         }else {
 
             // Enqueue styles
-            wp_enqueue_style( 'main-style', UCEF_DIR_URI . 'assets/dist/bundled-assets/main.css', [], filemtime( UCEF_DIR_PATH . 'assets/dist/bundled-assets/main.css' ), 'all' );
+            wp_enqueue_style( 'main-style', UCEF_DIR_URI . '/assets/dist/bundled-assets/main.css', [], filemtime( UCEF_DIR_PATH . '/assets/dist/bundled-assets/main.css' ), 'all' );
 
             
             // Enqueue scripts
-            wp_enqueue_script( 'main-js', UCEF_DIR_URI . 'assets/dist/bundled-assets/main.js', [], filemtime( UCEF_DIR_PATH . 'assets/dist/bundled-assets/main.js' ), true );
+            wp_enqueue_script( 'vendors-main-js', UCEF_DIR_URI . '/assets/dist/bundled-assets/vendors~main.js', ['jquery'], filemtime( UCEF_DIR_PATH . '/assets/dist/bundled-assets/vendors~main.js' ), true );
+            wp_enqueue_script( 'main-js', UCEF_DIR_URI . '/assets/dist/bundled-assets/main.js', [], filemtime( UCEF_DIR_PATH . '/assets/dist/bundled-assets/main.js' ), true );
             
         }
         

@@ -56,6 +56,9 @@ let config = {
             }
         }
         ]
+    },
+    externals: {
+        jquery: 'jQuery'
     }
 }
 
