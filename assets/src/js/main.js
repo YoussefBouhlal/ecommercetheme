@@ -17,7 +17,9 @@ import 'slick-carousel';
 */
 import Subcategories from './components/Subcategories';
 import ProductSize from './components/product/ProductSize';
+import CartSlider from './components/cart/CartSlider';
 import Slick from './components/Slick';
 
 new Subcategories();
 new ProductSize();
+new CartSlider();

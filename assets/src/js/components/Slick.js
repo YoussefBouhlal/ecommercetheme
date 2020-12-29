@@ -4,6 +4,8 @@
     {
         constructor()
         {
+            this.slidesCount = document.querySelector('.single-product__images__thumbs--carousel').childElementCount;
+
             this.events();
             this.initiateCarousel();
         }
@@ -16,14 +18,27 @@
         initiateCarousel()
         {
             $('.single-product__images__main--carousel').slick({
-                arrows: true,
-                asNavFor: '.single-product__images__thumbs--carousel'
+                arrows: false,
+                draggable: false,
+                rows: 0,
+                asNavFor:'.single-product__images__thumbs--carousel',
+                responsive: [
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            dots: true,
+                            draggable: true,
+                            centerMode: true
+                        }
+                    }
+                ]
             });
             $('.single-product__images__thumbs--carousel').slick({
-                slidesToShow: 3,
+                slidesToShow: this.slidesCount,
                 focusOnSelect: true,
                 asNavFor: '.single-product__images__main--carousel',
-                vertical: true
+                vertical: true,
+                rows: 0
             });
         }
 

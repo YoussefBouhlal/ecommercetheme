@@ -5,6 +5,9 @@
  * @package Ucef
  */
 
+
+get_template_part( 'template-parts/cart/cart-slider' );
+
 ?>
 
     <footer class="site-footer bg-black pt-32">

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.site {
+    position: relative;
+}
+
 .container {
     margin: 0 24px;
 

@@ -26,6 +26,12 @@ Background
 .bg-black {
     background-color: $black;
 }
+.bg-gray {
+    background-color: $softGray;
+}
+.bg-yellow {
+    background-color: $yellow;
+}
 .bg-transparent {
     background-color: transparent;
 }

@@ -35,3 +35,5 @@
 @import 'components/archive-page/_products';
 @import 'components/product/_product-cart';
 @import 'components/product/_single-product';
+@import 'components/cart/_cart-slider';
+@import 'components/cart/_cart-product';

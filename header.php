@@ -47,9 +47,9 @@
                             <?php svg( 'search' ); ?>
                         </div>
                         
-                        <div class="site-header__icons__cart">
+                        <button id="open-cart-slider" class="site-header__icons__cart">
                             <?php svg( 'cart' ); ?>
-                        </div>
+                        </button>
 
                     </div>
 
