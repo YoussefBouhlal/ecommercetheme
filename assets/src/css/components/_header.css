@@ -13,6 +13,7 @@
     }
 
     &__menu-icon {
+        border: none;
         svg{
             stroke: $black;
         }
@@ -29,6 +30,7 @@
 
         &__search, &__cart {
             padding: 3px;
+            border: none;
         }
 
         &__search {

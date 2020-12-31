@@ -4,7 +4,12 @@
     {
         constructor()
         {
-            this.slidesCount = document.querySelector('.single-product__images__thumbs--carousel').childElementCount;
+            this.slidesCount = 0;
+            this.slides = document.querySelector('.single-product__images__thumbs--carousel');
+
+            if ( this.slides ) {
+                this.slidesCount = this.slides.childElementCount;
+            }
 
             this.events();
             this.initiateCarousel();

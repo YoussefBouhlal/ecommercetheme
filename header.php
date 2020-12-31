@@ -31,9 +31,9 @@
 
                 <div class="site-header__content <?php echo (is_home()) ? "site-header__content--absolute" : "" ?>">
 
-                    <div class="site-header__menu-icon">
+                    <button class="site-header__menu-icon bg-transparent">
                         <?php svg( 'menu' ); ?>
-                    </div>
+                    </button>
 
                     <div class="site-header__logo">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -43,11 +43,11 @@
 
                     <div class="site-header__icons">
 
-                        <div class="site-header__icons__search">
+                        <button class="site-header__icons__search bg-transparent">
                             <?php svg( 'search' ); ?>
-                        </div>
+                        </button>
                         
-                        <button id="open-cart-slider" class="site-header__icons__cart">
+                        <button id="open-cart-slider" class="site-header__icons__cart bg-transparent">
                             <?php svg( 'cart' ); ?>
                         </button>
 

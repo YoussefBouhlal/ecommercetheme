@@ -8,6 +8,7 @@
 
 namespace Ucef;
 
+
 final class Init
 {
     /**
@@ -19,7 +20,9 @@ final class Init
     {
         return [
             Setup\Enqueue::class,
-            Setup\Menus::class
+            Setup\Menus::class,
+            Setup\Setup::class,
+            Woocommerce\ContentProduct::class
         ];
     }
 
