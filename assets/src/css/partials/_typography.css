@@ -8,7 +8,6 @@ body {
 /*!--------------------------
 # Heading
 ----------------------------*/
-h1,
 .h1 {
     @mixin fontSize 32px {}
     @mixin atLarge {
@@ -16,7 +15,6 @@ h1,
     }
 }
 
-h2,
 .h2 {
     @mixin fontSize 24px, 0.4px {}
     @mixin atLarge {
@@ -24,7 +22,6 @@ h2,
     }
 }
 
-h3,
 .h3 {
     @mixin fontSize 18px, 0.3px {}
     @mixin atLarge {
@@ -32,7 +29,6 @@ h3,
     }
 }
 
-h4,
 .h4 {
     @mixin fontSize 16px, 0.25px {}
     @mixin atLarge {
@@ -40,7 +36,6 @@ h4,
     }
 }
 
-h5,
 .h5 {
     @mixin fontSize 10px {}
     @mixin atLarge {
@@ -48,7 +43,6 @@ h5,
     }
 }
 
-p,
 .p {
     @mixin fontSize 14px {}
     @mixin atLarge {

@@ -37,3 +37,8 @@
 @import 'components/product/_single-product';
 @import 'components/cart/_cart-slider';
 @import 'components/cart/_cart-product';
+
+/*!--------------------------
+# Woocommerce
+----------------------------*/
+@import 'woocommerce/_shop-page';
