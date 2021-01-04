@@ -25,6 +25,7 @@ class Menus
         */
         register_nav_menus(array(
             'primary' => esc_html__( 'Primary', 'ucef' ),
+            'secondary' => esc_html__( 'Secondary', 'ucef' ),
         ));
     }
 }

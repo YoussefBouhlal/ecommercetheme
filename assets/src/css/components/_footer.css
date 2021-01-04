@@ -1,47 +1,23 @@
-.site-footer {
+.footer-menu {
+    & ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        border-radius: 0;
 
-    &__content {
-        
-        @mixin atMedium {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
+        & li {
+            display: inline;
+            margin: 0 5px 0 0;
 
-    &__about {
-
-        @mixin atMedium {
-            margin-bottom: 0;
-        }
-    }
-
-    &__right {
-
-        @mixin atMedium {
-            display: flex;
-        }
-    }
-
-    &__pages {
-
-        @mixin atMedium {
-            margin-bottom: 0;
-            margin-right: 2rem;
-        }
-    }
-
-    &__media {
-
-        &__content {
-            display: flex;
-        }
-        &__link {
-            padding: .3rem;
-            
-            & svg {
-                fill: $white;
-                width: 20px;
-                height: 20px;
+            &:last-child {
+                margin: 0;
+            }
+            & a {
+                color: #313131;
+            }
+            &.current-menu-item a {
+                color: #ff9292;
             }
         }
     }

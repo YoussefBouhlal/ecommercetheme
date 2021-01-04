@@ -22,7 +22,8 @@ final class Init
             Setup\Enqueue::class,
             Setup\Menus::class,
             Setup\Setup::class,
-            Woocommerce\ContentProduct::class
+            Woocommerce\ContentProduct::class,
+            Woocommerce\ContentSingleProduct::class,
         ];
     }
 

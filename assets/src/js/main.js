@@ -1,6 +1,6 @@
 /*
-*Import CSS Files
-*/
+ *Import CSS Files
+ */
 import '../css/main.css';
 
 if (module.hot) {
@@ -8,18 +8,18 @@ if (module.hot) {
 }
 
 /*
-*Import 3rd Party Files
-*/
-import 'slick-carousel';
+ *Import 3rd Party Files
+ */
+import 'popper.js';
+import 'bootstrap';
 
 /*
-*Import classes
-*/
+ *Import classes
+ */
 import Subcategories from './components/Subcategories';
 import ProductSize from './components/product/ProductSize';
 import CartSlider from './components/cart/CartSlider';
-import Slick from './components/Slick';
 
 new Subcategories();
 new ProductSize();
-new CartSlider();
+// new CartSlider();

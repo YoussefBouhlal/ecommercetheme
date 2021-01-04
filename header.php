@@ -1,6 +1,6 @@
 <?php
 /**
- * Header Template
+ * The header of our theme
  * 
  * @package Ucef
  */
@@ -12,51 +12,43 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ) ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('bg-white'); ?> >
+<body <?php body_class(); ?> >
 <?php wp_body_open(); ?>
 
 <div id="page" class="site">
 
     <header class="site-header" role="banner">
-        
-        <div class="container">
 
-            <div class="site-header__container">
+        <section class="search">
+            <div class="container">
+                Search
+            </div>
+        </section><!-- .search -->
 
-                <div class="site-header__content <?php echo (is_home()) ? "site-header__content--absolute" : "" ?>">
-
-                    <button class="site-header__menu-icon bg-transparent">
-                        <?php svg( 'menu' ); ?>
-                    </button>
-
-                    <div class="site-header__logo">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                            <?php svg( 'logo' ); ?>
-                        </a>
+        <section class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="brand col-3">Logo</div>
+                    <div class="second-column col-9">
+                        <div class="account">Account</div>
+                        <nav class="main-menu">
+                            <?php
+                                wp_nav_menu(
+                                    array(
+                                        'theme_location'    => 'primary'
+                                    )
+                                );
+                            ?>
+                        </nav>
                     </div>
-
-                    <div class="site-header__icons">
-
-                        <button class="site-header__icons__search bg-transparent">
-                            <?php svg( 'search' ); ?>
-                        </button>
-                        
-                        <button id="open-cart-slider" class="site-header__icons__cart bg-transparent">
-                            <?php svg( 'cart' ); ?>
-                        </button>
-
-                    </div>
-
-                </div><!-- .site-header__content -->
-                
-            </div><!-- .site-header__container -->
-
-        </div><!-- .container -->
+                </div>
+            </div>
+        </section><!-- .top-bar -->
 
     </header><!-- .site-header -->

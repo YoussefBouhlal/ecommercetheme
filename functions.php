@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme Functions
+ * Theme functions and definitions
  * 
  * @package Ucef
  */
