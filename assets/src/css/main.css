@@ -5,7 +5,19 @@
 
 
 /*!--------------------------
+# Global
+----------------------------*/
+@import 'global/_wp-content-width';
+
+
+/*!--------------------------
 # Components
 ----------------------------*/
 @import 'components/_header';
 @import 'components/_footer';
+
+
+/*!--------------------------
+# Woocommerce
+----------------------------*/
+@import 'woocommerce/archive-product';
