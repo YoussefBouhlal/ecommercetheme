@@ -19,6 +19,7 @@ final class Init
     public static function get_services()
     {
         return [
+            Api\Customizer::class,
             Setup\Enqueue::class,
             Setup\Menus::class,
             Setup\Setup::class,

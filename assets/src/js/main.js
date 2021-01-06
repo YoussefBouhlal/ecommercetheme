@@ -12,10 +12,12 @@ if (module.hot) {
  */
 import 'popper.js';
 import 'bootstrap';
+import 'slick-carousel';
 
 /*
  *Import classes
  */
+import SlickCarousel from './components/SlickCarousel';
 import Subcategories from './components/Subcategories';
 import ProductSize from './components/product/ProductSize';
 import CartSlider from './components/cart/CartSlider';

@@ -43,7 +43,7 @@ class Setup
         /*
          * Add featured image sizes
          */
-        // add_image_size('storeship-slider-full', 1500, 600, true); // width, height, crop
+        add_image_size('ucef-slider', 1920, 800, array( 'center', 'center' ) );
 
         /*
          * Add theme support for selective refresh for widgets.
@@ -68,6 +68,16 @@ class Setup
         add_theme_support('wc-product-gallery-zoom');
         add_theme_support('wc-product-gallery-lightbox');
         add_theme_support('wc-product-gallery-slider');
+
+        /*
+         * Add theme support for custom logo
+         */
+        add_theme_support( 'custom-logo', array(
+            'height'        => 85,
+            'width'         => 160,
+            'flex_height'   => true,
+            'flex_width'    => true
+        ) );
 
         /*
          * Switch default core markup for search form, comment form, and comments
