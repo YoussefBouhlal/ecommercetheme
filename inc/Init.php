@@ -25,6 +25,7 @@ final class Init
             Woocommerce\Archive_Product::class,
             Woocommerce\Content_Product::class,
             Woocommerce\ContentSingleProduct::class,
+            Woocommerce\Cart::class,
         ];
     }
 
