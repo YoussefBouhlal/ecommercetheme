@@ -1,0 +1,17 @@
+.search-form {
+    & button {
+        height: 23px;
+        width: 23px;
+        background-color: transparent;
+        border: none;
+    }
+
+    & input[type="search"] {
+        background-color: #fff;
+        border: none;
+        font-weight: 500;
+        font-size: 110%;
+        padding: 0.3rem 1rem;
+        margin-right: 0.3rem;
+    }
+}

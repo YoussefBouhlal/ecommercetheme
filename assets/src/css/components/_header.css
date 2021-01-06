@@ -15,4 +15,9 @@
             }
         }
     }
+
+    & .dropdown:hover > .dropdown-menu,
+    & .dropup:hover > .dropdown-menu {
+        display: block;
+    }
 }

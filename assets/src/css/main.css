@@ -7,6 +7,7 @@
 /*!--------------------------
 # Global
 ----------------------------*/
+@import 'global/_typography';
 @import 'global/_wp-content-width';
 
 
@@ -15,9 +16,14 @@
 ----------------------------*/
 @import 'components/_header';
 @import 'components/_footer';
+@import 'components/_searchform';
 
 
 /*!--------------------------
 # Woocommerce
 ----------------------------*/
-@import 'woocommerce/archive-product';
+@import 'woocommerce/_grid-system';
+@import 'woocommerce/_archive-product';
+@import 'woocommerce/_single-product';
+@import 'woocommerce/_cart';
+@import 'woocommerce/_checkout';
