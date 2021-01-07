@@ -11,7 +11,7 @@
         events()
         {
             $(".slick-carousel").slick( {
-                dots : true
+                arrows : false
             } );
         }
     

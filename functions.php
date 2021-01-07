@@ -5,6 +5,7 @@
  * @package Ucef
  */
 
+
 if ( ! defined( 'UCEF_DIR_PATH' ) )
 {
     define( 'UCEF_DIR_PATH', untrailingslashit( get_template_directory() ) );

@@ -19,6 +19,8 @@
 @import 'components/_header';
 @import 'components/_footer';
 @import 'components/_searchform';
+@import 'components/_dealoftheweek';
+@import 'components/_section-title';
 
 
 /*!--------------------------

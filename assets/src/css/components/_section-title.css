@@ -1,0 +1,26 @@
+.home main .section-title{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.home main .section-title::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 100%;
+    background: #ddd;
+}
+
+.home main .section-title h2{
+    font-family: 'Seaweed Script';
+    font-size: 3rem;    
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    vertical-align: top;
+    padding: 0 20px 0 0;
+    margin: 0;    
+}

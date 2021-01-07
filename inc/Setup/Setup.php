@@ -44,6 +44,7 @@ class Setup
          * Add featured image sizes
          */
         add_image_size('ucef-slider', 1920, 800, array( 'center', 'center' ) );
+        add_image_size('ucef-lab-blog', 960, 640, array( 'center', 'center' ) );
 
         /*
          * Add theme support for selective refresh for widgets.

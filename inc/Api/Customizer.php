@@ -22,6 +22,7 @@ class Customizer
 		return [
             Customizer\Footer::class,
             Customizer\Carousell::class,
+            Customizer\Homepage::class,
 		];
 	}
 
