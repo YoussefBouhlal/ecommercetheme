@@ -22,9 +22,11 @@ class Content_Product
 
     function is_shop_page()
     {
-        if ( is_shop() ){
-            // add excerpt after title
-            add_action( 'woocommerce_after_shop_loop_item_title', 'the_excerpt', 1 );
+        if( class_exists( 'WooCommerce' ) ){
+            if ( is_shop() ){
+                // add excerpt after title
+                add_action( 'woocommerce_after_shop_loop_item_title', 'the_excerpt', 1 );
+            }
         }
     }
     

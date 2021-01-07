@@ -23,6 +23,7 @@ final class Init
             Setup\Enqueue::class,
             Setup\Menus::class,
             Setup\Setup::class,
+            Setup\Widgets::class,
             Woocommerce\Archive_Product::class,
             Woocommerce\Content_Product::class,
             Woocommerce\ContentSingleProduct::class,

@@ -10,7 +10,25 @@
     <footer>
         <section class="footer-widgets">
             <div class="container">
-                <div class="row">Footer Widgets</div>
+                <div class="row">
+                    <?php if( is_active_sidebar( 'ucef-sidebar-footer-1' ) ): ?>
+                        <div class="col-md-4 col-12">
+                            <?php dynamic_sidebar( 'ucef-sidebar-footer-1' ); ?>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php if( is_active_sidebar( 'ucef-sidebar-footer-2' ) ): ?>
+                        <div class="col-md-4 col-12">
+                            <?php dynamic_sidebar( 'ucef-sidebar-footer-2' ); ?>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php if( is_active_sidebar( 'ucef-sidebar-footer-3' ) ): ?>
+                        <div class="col-md-4 col-12">
+                            <?php dynamic_sidebar( 'ucef-sidebar-footer-3' ); ?>
+                        </div>
+                    <?php endif; ?>
+                </div>
             </div>
         </section>
         <section class="copyright">

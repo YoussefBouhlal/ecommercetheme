@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file
+ * The archive template file
  * 
  * @package Ucef
  */
@@ -14,18 +14,23 @@ get_header();
             <div class="row">
                 <div class="col-lg-9 col-md-8 col-12">
                     <?php
+                        // Display the archive title
+                        the_archive_title( '<h1 class="article-title">', '</h1>');
+
                         // If there are any posts
                         if ( have_posts() ):
-                            // Lood posts loop
+
+                            //  Lood posts loop
                             while ( have_posts() ): the_post();
-                                get_template_part( 'template-parts/content' );
+                                get_template_part( 'template-parts/content', 'archive' );
                             endwhile;
 
-                            // We're using numeric page navigation here
+                            // We're using numirec page navigation here
                             the_posts_pagination( array(
                                 'prev_text'     => 'Previous',
                                 'next_text'     => 'Next',
                             ));
+
                         else:
                             ?>
                                 <p>Nothing to display</p>

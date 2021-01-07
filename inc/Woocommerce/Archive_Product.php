@@ -37,15 +37,17 @@ class Archive_Product
 
     function is_shop_page()
     {
-        if ( is_shop() ){
-            // open container for the sidebar
-            add_action( 'woocommerce_before_main_content', array( $this, 'open_sidebar_tags'), 6 );
-            
-            // add side bar to the top
-            add_action( 'woocommerce_before_main_content', 'woocommerce_get_sidebar', 7 );
-            
-            // close container for the sidebar
-            add_action( 'woocommerce_before_main_content', array( $this, 'close_sidebar_tags'), 8 );
+        if( class_exists( 'WooCommerce' ) ){
+            if ( is_shop() ){
+                // open container for the sidebar
+                add_action( 'woocommerce_before_main_content', array( $this, 'open_sidebar_tags'), 6 );
+                
+                // add side bar to the top
+                add_action( 'woocommerce_before_main_content', 'woocommerce_get_sidebar', 7 );
+                
+                // close container for the sidebar
+                add_action( 'woocommerce_before_main_content', array( $this, 'close_sidebar_tags'), 8 );
+            }
         }
     }
 
