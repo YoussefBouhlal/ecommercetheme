@@ -1,0 +1,277 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ucef v1.0.0\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2021-01-08 17:39+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Your Team <translations@example.com>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+"X-Poedit-SearchPathExcluded-1: assets\n"
+"X-Poedit-SearchPathExcluded-2: node_modules\n"
+"X-Poedit-SearchPathExcluded-3: vendor\n"
+
+#: 404.php:16
+msgid "Page not found"
+msgstr "الصفحة غير موجودة"
+
+#: 404.php:17
+msgid "unfortunately, the page you tried to reach does not exist on this site!"
+msgstr ""
+
+#: 404.php:21
+msgid "Take a Look at Our Latest Posts"
+msgstr ""
+
+#: archive.php:30 index.php:26 search.php:30
+msgid "Previous"
+msgstr ""
+
+#: archive.php:31 index.php:27 search.php:31
+msgid "Next"
+msgstr ""
+
+#: archive.php:36 index.php:31 template-home.php:188
+msgid "Nothing to display"
+msgstr ""
+
+#: comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:34
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: comments.php:67
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:38
+msgid "Copyright - All Rights Reserved"
+msgstr ""
+
+#: header.php:63
+msgid "My Account"
+msgstr ""
+
+#: header.php:66
+msgid "Logout"
+msgstr ""
+
+#: header.php:70
+msgid "Login / Register"
+msgstr ""
+
+#: header.php:86
+msgid "Toggle navigation"
+msgstr ""
+
+#: inc/Api/Customizer/Carousell.php:18
+msgid "Carousell Settings"
+msgstr ""
+
+#: inc/Api/Customizer/Carousell.php:19
+msgid "Carousell Section"
+msgstr ""
+
+#: inc/Api/Customizer/Carousell.php:34 inc/Api/Customizer/Carousell.php:35
+#, php-format
+msgid "Set slider page %s "
+msgstr ""
+
+#: inc/Api/Customizer/Carousell.php:50 inc/Api/Customizer/Carousell.php:51
+#, php-format
+msgid "Button Text for Page %s "
+msgstr ""
+
+#: inc/Api/Customizer/Carousell.php:66 inc/Api/Customizer/Carousell.php:67
+#, php-format
+msgid "URL for Page %s "
+msgstr ""
+
+#: inc/Api/Customizer/Footer.php:18
+msgid "Copyright Settings"
+msgstr ""
+
+#: inc/Api/Customizer/Footer.php:19
+msgid "Copyright Section"
+msgstr ""
+
+#: inc/Api/Customizer/Footer.php:29
+msgid "Copyright"
+msgstr ""
+
+#: inc/Api/Customizer/Footer.php:30
+msgid "Please, add your copyright information here"
+msgstr ""
+
+#: inc/Api/Customizer/Homepage.php:18
+msgid "Home Page Products and Blog Settings"
+msgstr ""
+
+#: inc/Api/Customizer/Homepage.php:19
+msgid "Home Page Section"
+msgstr ""
+
+#: inc/Api/Customizer/Homepage.php:53 inc/Api/Customizer/Homepage.php:54
+msgid "Popular Products Max Number"
+msgstr ""
+
+#: inc/Api/Customizer/Homepage.php:66 inc/Api/Customizer/Homepage.php:67
+msgid "Popular Products Max Columns"
+msgstr ""
+
+#: inc/Api/Customizer/Homepage.php:82 inc/Api/Customizer/Homepage.php:83
+msgid "New Arrivals Max Number"
+msgstr ""
+
+#: inc/Api/Customizer/Homepage.php:95 inc/Api/Customizer/Homepage.php:96
+msgid "New Arrivals Max Columns"
+msgstr ""
+
+#: inc/Api/Customizer/Homepage.php:111
+msgid "Show Deal of the Week"
+msgstr ""
+
+#: inc/Api/Customizer/Homepage.php:126
+msgid "Deal of the Week Product ID"
+msgstr ""
+
+#: inc/Api/Customizer/Homepage.php:127
+msgid "Product ID to Display"
+msgstr ""
+
+#: inc/Core/WalkerNav.php:359
+msgid "Add a menu"
+msgstr ""
+
+#: inc/Setup/Menus.php:27
+msgid "Primary"
+msgstr ""
+
+#: inc/Setup/Menus.php:28
+msgid "Secondary"
+msgstr ""
+
+#: inc/Setup/Widgets.php:24
+msgid "Main Sidebar"
+msgstr ""
+
+#: inc/Setup/Widgets.php:26 inc/Setup/Widgets.php:46 inc/Setup/Widgets.php:56
+#: inc/Setup/Widgets.php:66
+msgid "Drag and drop your widgets here"
+msgstr ""
+
+#: inc/Setup/Widgets.php:34
+msgid "Shop Sidebar"
+msgstr ""
+
+#: inc/Setup/Widgets.php:36
+msgid "Drag and drop your WooCommerce widgets here"
+msgstr ""
+
+#: inc/Setup/Widgets.php:44
+msgid "Footer Sidebar 1"
+msgstr ""
+
+#: inc/Setup/Widgets.php:54
+msgid "Footer Sidebar 2"
+msgstr ""
+
+#: inc/Setup/Widgets.php:64
+msgid "Footer Sidebar 3"
+msgstr ""
+
+#: search.php:15
+msgid "Search result for"
+msgstr ""
+
+#: search.php:36
+msgid "There are no results for your query"
+msgstr ""
+
+#: searchform.php:15
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:18
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: template-home.php:72
+msgid "Popular Products"
+msgstr ""
+
+#: template-home.php:85
+msgid "New Arrivals"
+msgstr ""
+
+#: template-home.php:105
+msgid "Deal of the Week"
+msgstr ""
+
+#: template-home.php:115
+msgid "% OFF"
+msgstr "% خصم"
+
+#: template-home.php:140
+msgid "Add to cart"
+msgstr "اضف للسلة"
+
+#: template-home.php:155
+msgid "News From Our Blog"
+msgstr "أخبار من مدونتنا"
+
+#: template-parts/content-archive.php:21 template-parts/content-search.php:21
+#: template-parts/content-single.php:13 template-parts/content.php:21
+msgid "Published by"
+msgstr "الناشر"
+
+#: template-parts/content-archive.php:21 template-parts/content-search.php:21
+#: template-parts/content-single.php:13 template-parts/content.php:21
+msgid "on"
+msgstr "في"
+
+#: template-parts/content-archive.php:24 template-parts/content-search.php:24
+#: template-parts/content-single.php:15 template-parts/content.php:24
+msgid "Categories"
+msgstr "التصنيفات"
+
+#: template-parts/content-archive.php:28 template-parts/content-search.php:28
+#: template-parts/content-single.php:18 template-parts/content.php:28
+msgid "Tags"
+msgstr "الوسوم"
+
+#: template-parts/content-single.php:33
+msgid "Pages"
+msgstr "الصفحات"
