@@ -15,8 +15,8 @@ class Footer
     public function register( $wp_customize  )
     {
         $wp_customize ->add_section( 'ucef_footer_section', array(
-            'title'         => 'Copyright Settings',
-            'description'   => 'Copyright Section'
+            'title'         => __( 'Copyright Settings', 'ucef' ),
+            'description'   => __( 'Copyright Section', 'ucef' )
         ) );
 
         $wp_customize->add_setting( 'ucef_footer_set_copyright' , array(
@@ -26,8 +26,8 @@ class Footer
         ) );
 
         $wp_customize->add_control( 'ucef_footer_set_copyright' , array(
-            'label'         => 'Copyright',
-            'description'   => 'Please, add your copyright information here',
+            'label'         => __( 'Copyright', 'ucef' ),
+            'description'   => __( 'Please, add your copyright information here', 'ucef' ),
             'section'       => 'ucef_footer_section',
             'type'          => 'text'
         ) );

@@ -15,8 +15,8 @@ class Homepage
     public function register( $wp_customize  )
     {
         $wp_customize ->add_section( 'ucef_home_section', array(
-            'title'         => 'Home Page Products and Blog Settings',
-            'description'   => 'Home Page Section'
+            'title'         => __( 'Home Page Products and Blog Settings', 'ucef' ),
+            'description'   => __( 'Home Page Section', 'ucef' )
         ) );
 
         /**
@@ -50,8 +50,8 @@ class Homepage
         ) );
 
         $wp_customize->add_control( 'ucef_popular_max_num' , array(
-            'label'         => 'Popular Products Max Number',
-            'description'   => 'Popular Products Max Number',
+            'label'         => __( 'Popular Products Max Number', 'ucef' ),
+            'description'   => __( 'Popular Products Max Number', 'ucef' ),
             'section'       => 'ucef_home_section',
             'type'          => 'number'
         ) );
@@ -63,8 +63,8 @@ class Homepage
         ) );
 
         $wp_customize->add_control( 'ucef_popular_max_col' , array(
-            'label'         => 'Popular Products Max Columns',
-            'description'   => 'Popular Products Max Columns',
+            'label'         => __( 'Popular Products Max Columns', 'ucef' ),
+            'description'   => __( 'Popular Products Max Columns', 'ucef' ),
             'section'       => 'ucef_home_section',
             'type'          => 'number'
         ) );
@@ -79,8 +79,8 @@ class Homepage
         ) );
 
         $wp_customize->add_control( 'ucef_newarrivals_max_num' , array(
-            'label'         => 'New Arrivals Max Number',
-            'description'   => 'New Arrivals Max Number',
+            'label'         => __( 'New Arrivals Max Number', 'ucef' ),
+            'description'   => __( 'New Arrivals Max Number', 'ucef' ),
             'section'       => 'ucef_home_section',
             'type'          => 'number'
         ) );
@@ -92,8 +92,8 @@ class Homepage
         ) );
 
         $wp_customize->add_control( 'ucef_newarrivals_max_col' , array(
-            'label'         => 'New Arrivals Max Columns',
-            'description'   => 'New Arrivals Max Columns',
+            'label'         => __( 'New Arrivals Max Columns', 'ucef' ),
+            'description'   => __( 'New Arrivals Max Columns', 'ucef' ),
             'section'       => 'ucef_home_section',
             'type'          => 'number'
         ) );
@@ -108,7 +108,7 @@ class Homepage
         ) );
 
         $wp_customize->add_control( 'ucef_deal_show' , array(
-            'label'         => 'Show Deal of the Week',
+            'label'         => __( 'Show Deal of the Week', 'ucef' ),
             'section'       => 'ucef_home_section',
             'type'          => 'checkbox'
         ) );
@@ -123,8 +123,8 @@ class Homepage
         ) );
 
         $wp_customize->add_control( 'ucef_deal_product' , array(
-            'label'         => 'Deal of the Week Product ID',
-            'description'   => 'Product ID to Display',
+            'label'         => __( 'Deal of the Week Product ID', 'ucef' ),
+            'description'   => __( 'Product ID to Display', 'ucef' ),
             'section'       => 'ucef_home_section',
             'type'          => 'number'
         ) );

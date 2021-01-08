@@ -21,6 +21,12 @@ class Setup
     public function setup()
     {
         /*
+         * for internationalization
+         */
+        $textdomain = 'ucef';
+        load_theme_textdomain( $textdomain, UCEF_DIR_PATH . '/languages/' );
+        
+        /*
          * Add default posts and comments RSS feed links to head.
          */
         add_theme_support( 'automatic-feed-links' );

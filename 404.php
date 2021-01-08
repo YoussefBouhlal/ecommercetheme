@@ -13,12 +13,12 @@ get_header();
         <div class="container">
             <div class="error-404">
                 <header>
-                    <h1>Page not found</h1>
-                    <p>unfortunately, the page you tried to reach does not exist on this site!</p>
+                    <h1><?php _e( 'Page not found', 'ucef' ); ?></h1>
+                    <p><?php _e( 'unfortunately, the page you tried to reach does not exist on this site!', 'ucef'); ?></p>
                 </header>
                 <?php 
                     the_widget( 'WP_Widget_Recent_Posts', array(
-                        'title'     => 'Take a Look at Our Latest Posts',
+                        'title'     => __('Take a Look at Our Latest Posts', 'ucef'),
                         'number'    => 3
                     ) );
                 ?>

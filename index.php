@@ -23,12 +23,12 @@ get_header();
 
                             // We're using numeric page navigation here
                             the_posts_pagination( array(
-                                'prev_text'     => 'Previous',
-                                'next_text'     => 'Next',
+                                'prev_text'     => __( 'Previous', 'ucef' ),
+                                'next_text'     => __( 'Next', 'ucef' ),
                             ));
                         else:
                             ?>
-                                <p>Nothing to display</p>
+                                <p><?php _e( 'Nothing to display', 'ucef' ); ?></p>
                             <?php
                         endif;
                     ?>

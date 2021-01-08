@@ -12,10 +12,10 @@
 ?>
 
 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-    <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'Ucef'); ?>" value="<?php echo get_search_query(); ?>" name="s">
+    <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'ucef'); ?>" value="<?php echo get_search_query(); ?>" name="s">
     <button type="submit" class="search-submit">
         <?php svg('search'); ?>
-        <span class="screen-reader-text"><?php echo _x( 'Search', 'submit button', 'Ucef' ); ?></span>
+        <span class="screen-reader-text"><?php echo _x( 'Search', 'submit button', 'ucef' ); ?></span>
     </button>
     <?php if ( class_exists( 'WooCommerce' )): ?>
         <input type="hidden" value="product" name="post_type" id="post_type">

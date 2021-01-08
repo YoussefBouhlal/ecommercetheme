@@ -69,7 +69,7 @@ get_header();
                 ?>
                 <div class="container">
                     <div class="section-title">
-                        <h2>Popular Products</h2>
+                        <h2><?php _e( 'Popular Products', 'ucef' ); ?></h2>
                     </div>
                     <?php echo do_shortcode( '[products limit="'.$popular_limit.'" columns="'.$popular_columns.'" orderby="popularity"]' ); ?>
                 </div>
@@ -82,7 +82,7 @@ get_header();
                 ?>
                 <div class="container">
                     <div class="section-title">
-                        <h2>New Arrivals</h2>
+                        <h2><?php _e( 'New Arrivals', 'ucef' ); ?></h2>
                     </div>
                     <?php echo do_shortcode( '[products limit="'.$newarrivals_limit.'" columns="'.$newarrivals_columns.'" orderby="date"]' ); ?>
                 </div>
@@ -102,7 +102,7 @@ get_header();
                     <section class="deal-of-the-week">
                         <div class="container">
                             <div class="section-title">
-                                <h2>Deal of the Week</h2>
+                                <h2><?php _e( 'Deal of the Week', 'ucef' ); ?></h2>
                             </div>
                             <div class="row d-flex align-items-center">
                                 <div class="deal-img col-md-6 col-12 ml-auto text-center">
@@ -112,7 +112,7 @@ get_header();
 
                                     <?php if( !empty( $sale ) ): ?>
                                         <span class="discount">
-                                            <?php echo $discount_percentage . '% OFF' ?>
+                                            <?php echo $discount_percentage . __( '% OFF', 'ucef' ) ?>
                                         </span>
                                     <?php endif; ?>
 
@@ -137,7 +137,7 @@ get_header();
                                             </span>
                                         <?php endif; ?>
                                     </div>
-                                    <a href="<?php echo esc_url( '?add-to-cart=' . $dealproduct ); ?>" class="add-to-cart">Add to cart</a>
+                                    <a href="<?php echo esc_url( '?add-to-cart=' . $dealproduct ); ?>" class="add-to-cart"><?php _e( 'Add to cart', 'ucef' ); ?></a>
 
                                 </div>
                             </div>
@@ -152,7 +152,7 @@ get_header();
         <section class="lab-blog">
             <div class="container">
                 <div class="section-title">
-                    <h2>News From Our Blog</h2>
+                    <h2><?php _e( 'News From Our Blog', 'ucef' ); ?></h2>
                 </div>
                 <div class="row">
                     <?php
@@ -185,7 +185,7 @@ get_header();
 
                         else:
                             ?>
-                                <p>Nothing to display</p>
+                                <p><?php _e( 'Nothing to display', 'ucef' ); ?></p>
                             <?php
                         endif;
                     ?>

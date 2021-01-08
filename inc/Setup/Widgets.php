@@ -21,9 +21,9 @@ class Widgets
     public function widgets()
     {
         register_sidebar( array(
-            'name'          => 'Main Sidebar',
+            'name'          => __( 'Main Sidebar', 'ucef' ),
             'id'            => 'ucef-sidebar-1',
-            'description'   => 'Drag and drop your widgets here',
+            'description'   => __( 'Drag and drop your widgets here', 'ucef' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title">',
@@ -31,9 +31,9 @@ class Widgets
         ) );
         
         register_sidebar( array(
-            'name'          => 'Shop Sidebar',
+            'name'          => __( 'Shop Sidebar', 'ucef' ),
             'id'            => 'ucef-sidebar-shop',
-            'description'   => 'Drag and drop your WooCommerce widgets here',
+            'description'   => __( 'Drag and drop your WooCommerce widgets here', 'ucef' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title">',
@@ -41,9 +41,9 @@ class Widgets
         ) );
         
         register_sidebar( array(
-            'name'          => 'Footer Sidebar 1',
+            'name'          => __( 'Footer Sidebar 1', 'ucef' ),
             'id'            => 'ucef-sidebar-footer-1',
-            'description'   => 'Drag and drop your widgets here',
+            'description'   => __( 'Drag and drop your widgets here', 'ucef' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title">',
@@ -51,9 +51,9 @@ class Widgets
         ) );
         
         register_sidebar( array(
-            'name'          => 'Footer Sidebar 2',
+            'name'          => __( 'Footer Sidebar 2', 'ucef' ),
             'id'            => 'ucef-sidebar-footer-2',
-            'description'   => 'Drag and drop your widgets here',
+            'description'   => __( 'Drag and drop your widgets here', 'ucef' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title">',
@@ -61,9 +61,9 @@ class Widgets
         ) );
         
         register_sidebar( array(
-            'name'          => 'Footer Sidebar 3',
+            'name'          => __( 'Footer Sidebar 3', 'ucef' ),
             'id'            => 'ucef-sidebar-footer-3',
-            'description'   => 'Drag and drop your widgets here',
+            'description'   => __( 'Drag and drop your widgets here', 'ucef' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title">',

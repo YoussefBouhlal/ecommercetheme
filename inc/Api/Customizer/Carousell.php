@@ -15,8 +15,8 @@ class Carousell
     public function register( $wp_customize )
     {
         $wp_customize ->add_section( 'ucef_carousell_section', array(
-            'title'         => 'Carousell Settings',
-            'description'   => 'Carousell Section'
+            'title'         => __( 'Carousell Settings', 'ucef'),
+            'description'   => __( 'Carousell Section', 'ucef')
         ) );
 
         for ($i=1; $i <= 3; $i++) { 
@@ -31,8 +31,8 @@ class Carousell
             ) );
     
             $wp_customize->add_control( 'set_slider_page'.$i , array(
-                'label'         => 'Set slider page ' . $i,
-                'description'   => 'Set slider page ' . $i,
+                'label'         => sprintf( __( 'Set slider page %s ', 'ucef' ), $i ),
+                'description'   => sprintf( __( 'Set slider page %s ', 'ucef' ), $i ),
                 'section'       => 'ucef_carousell_section',
                 'type'          => 'dropdown-pages'
             ) );
@@ -47,8 +47,8 @@ class Carousell
             ) );
     
             $wp_customize->add_control( 'set_slider_button_text'.$i , array(
-                'label'         => 'Button Text for Page ' . $i,
-                'description'   => 'Button Text for Page ' . $i,
+                'label'         => sprintf( __( 'Button Text for Page %s ', 'ucef' ), $i ),
+                'description'   => sprintf( __( 'Button Text for Page %s ', 'ucef' ), $i ),
                 'section'       => 'ucef_carousell_section',
                 'type'          => 'text'
             ) );
@@ -63,8 +63,8 @@ class Carousell
             ) );
     
             $wp_customize->add_control( 'set_slider_button_url'.$i , array(
-                'label'         => 'URL for Page ' . $i,
-                'description'   => 'URL for Page ' . $i,
+                'label'         => sprintf( __( 'URL for Page %s ', 'ucef' ), $i ),
+                'description'   => sprintf( __( 'URL for Page %s ', 'ucef' ), $i ),
                 'section'       => 'ucef_carousell_section',
                 'type'          => 'url'
             ) );
