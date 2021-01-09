@@ -18,14 +18,14 @@
         ?>
     </div>
     <div class="meta">
-        <p><?php _e( 'Published by', 'ucef' ); ?> <?php the_author_posts_link(); ?> <?php _e( 'on', 'ucef' ); ?> <?php echo get_the_date(); ?>
+        <p><?php esc_html_e( 'Published by', 'ucef' ); ?> <?php the_author_posts_link(); ?> <?php esc_html_e( 'on', 'ucef' ); ?> <?php echo esc_html( get_the_date() ); ?>
             <br />
             <?php if( has_category() ): ?>
-                <?php _e( 'Categories', 'ucef' ); ?>: <span><?php the_category( ' ' ); ?></span>
+                <?php esc_html_e( 'Categories', 'ucef' ); ?>: <span><?php the_category( ' ' ); ?></span>
             <?php endif; ?>
             <br />
             <?php if( has_tag() ): ?>
-                <?php _e( 'Tags', 'ucef' ); ?>: <span><?php the_tags( '', ', '); ?></span>
+                <?php esc_html_e( 'Tags', 'ucef' ); ?>: <span><?php the_tags( '', ', '); ?></span>
             <?php endif; ?>
         </p>
     </div>

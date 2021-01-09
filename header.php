@@ -60,22 +60,22 @@
 
                                         <?php if ( is_user_logged_in() ): ?>
                                             <li>
-                                                <a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ); ?>" class="nav-link"><?php _e( 'My Account', 'ucef'); ?></a>
+                                                <a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ); ?>" class="nav-link"><?php esc_html_e( 'My Account', 'ucef'); ?></a>
                                             </li>
                                             <li>
-                                                <a href="<?php echo esc_url( wp_logout_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ); ?>" class="nav-link"><?php _e( 'Logout', 'ucef'); ?></a>
+                                                <a href="<?php echo esc_url( wp_logout_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ); ?>" class="nav-link"><?php esc_html_e( 'Logout', 'ucef'); ?></a>
                                             </li>
                                         <?php else: ?>
                                             <li>
-                                                <a href="<?php echo esc_url( wp_logout_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ); ?>" class="nav-link"><?php _e( 'Login / Register', 'ucef'); ?></a>
+                                                <a href="<?php echo esc_url( wp_logout_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ); ?>" class="nav-link"><?php esc_html_e( 'Login / Register', 'ucef'); ?></a>
                                             </li>
                                         <?php endif; ?>
 
                                     </ul>
                                 </div>
                                 <div class="cart text-right">
-                                    <a href="<?php echo wc_get_cart_url(); ?>"><span class="cart-icon"><?php svg('cart'); ?></span></a>
-                                    <span class="items"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+                                    <a href="<?php echo esc_url( wc_get_cart_url() ); ?>"><span class="cart-icon"><?php svg('cart'); ?></span></a>
+                                    <span class="items"><?php echo esc_html( WC()->cart->get_cart_contents_count() ); ?></span>
                                 </div>
                             </div><!-- .account -->
                             <?php endif; ?>

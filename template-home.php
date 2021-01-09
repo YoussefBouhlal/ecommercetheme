@@ -43,7 +43,7 @@ get_header();
                                         </div>
                                         <div class="slider-description">
                                             <div class="subtitle"><?php the_content(); ?></div>
-                                            <a href="<?php echo $slider_button_url[$j]; ?>" class="btn btn-danger"><?php echo $slider_button_text[$j]; ?></a>
+                                            <a href="<?php echo esc_url( $slider_button_url[$j] ); ?>" class="btn btn-danger"><?php echo esc_html( $slider_button_text[$j] ); ?></a>
                                         </div>
                                     </div>
                                 </div>
@@ -69,9 +69,9 @@ get_header();
                 ?>
                 <div class="container">
                     <div class="section-title">
-                        <h2><?php _e( 'Popular Products', 'ucef' ); ?></h2>
+                        <h2><?php esc_html_e( 'Popular Products', 'ucef' ); ?></h2>
                     </div>
-                    <?php echo do_shortcode( '[products limit="'.$popular_limit.'" columns="'.$popular_columns.'" orderby="popularity"]' ); ?>
+                    <?php echo do_shortcode( '[products limit="'. esc_attr( $popular_limit ) .'" columns="'. esc_attr( $popular_columns ).'" orderby="popularity"]' ); ?>
                 </div>
             </section><!-- popular products section -->
 
@@ -82,9 +82,9 @@ get_header();
                 ?>
                 <div class="container">
                     <div class="section-title">
-                        <h2><?php _e( 'New Arrivals', 'ucef' ); ?></h2>
+                        <h2><?php esc_html_e( 'New Arrivals', 'ucef' ); ?></h2>
                     </div>
-                    <?php echo do_shortcode( '[products limit="'.$newarrivals_limit.'" columns="'.$newarrivals_columns.'" orderby="date"]' ); ?>
+                    <?php echo do_shortcode( '[products limit="'. esc_attr( $newarrivals_limit ).'" columns="'. esc_attr( $newarrivals_columns ).'" orderby="date"]' ); ?>
                 </div>
             </section><!-- new arrivals section -->
 
@@ -102,7 +102,7 @@ get_header();
                     <section class="deal-of-the-week">
                         <div class="container">
                             <div class="section-title">
-                                <h2><?php _e( 'Deal of the Week', 'ucef' ); ?></h2>
+                                <h2><?php esc_html_e( 'Deal of the Week', 'ucef' ); ?></h2>
                             </div>
                             <div class="row d-flex align-items-center">
                                 <div class="deal-img col-md-6 col-12 ml-auto text-center">
@@ -112,32 +112,32 @@ get_header();
 
                                     <?php if( !empty( $sale ) ): ?>
                                         <span class="discount">
-                                            <?php echo $discount_percentage . __( '% OFF', 'ucef' ) ?>
+                                            <?php echo esc_html( $discount_percentage ) . esc_html__( '% OFF', 'ucef' ) ?>
                                         </span>
                                     <?php endif; ?>
 
                                     <h3>
-                                        <a href="<?php echo get_permalink( $dealproduct ); ?>"><?php echo get_the_title( $dealproduct ); ?></a>
+                                        <a href="<?php echo esc_url( get_permalink( $dealproduct ) ); ?>"><?php echo esc_html( get_the_title( $dealproduct ) ); ?></a>
                                     </h3>
-                                    <p><?php echo get_the_excerpt( $dealproduct ); ?></p>
+                                    <p><?php echo esc_html( get_the_excerpt( $dealproduct ) ); ?></p>
                                     <div class="prices">
                                         <span class="regular">
                                             <?php
-                                                echo $currency;
-                                                echo $regular;
+                                                echo esc_html( $currency );
+                                                echo esc_html( $regular );
                                             ?>
                                         </span>
 
                                         <?php if( !empty( $sale ) ): ?>
                                             <span class="sale">
                                                 <?php
-                                                    echo $currency;
-                                                    echo $sale;
+                                                    echo esc_html( $currency );
+                                                    echo esc_html( $sale );
                                                 ?>
                                             </span>
                                         <?php endif; ?>
                                     </div>
-                                    <a href="<?php echo esc_url( '?add-to-cart=' . $dealproduct ); ?>" class="add-to-cart"><?php _e( 'Add to cart', 'ucef' ); ?></a>
+                                    <a href="<?php echo esc_url( '?add-to-cart=' . $dealproduct ); ?>" class="add-to-cart"><?php esc_html_e( 'Add to cart', 'ucef' ); ?></a>
 
                                 </div>
                             </div>
@@ -152,7 +152,7 @@ get_header();
         <section class="lab-blog">
             <div class="container">
                 <div class="section-title">
-                    <h2><?php _e( 'News From Our Blog', 'ucef' ); ?></h2>
+                    <h2><?php esc_html_e( 'News From Our Blog', 'ucef' ); ?></h2>
                 </div>
                 <div class="row">
                     <?php
@@ -185,7 +185,7 @@ get_header();
 
                         else:
                             ?>
-                                <p><?php _e( 'Nothing to display', 'ucef' ); ?></p>
+                                <p><?php esc_html_e( 'Nothing to display', 'ucef' ); ?></p>
                             <?php
                         endif;
                     ?>

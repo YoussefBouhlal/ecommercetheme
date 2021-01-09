@@ -27,13 +27,13 @@ get_header();
 
                             // We're using numirec page navigation here
                             the_posts_pagination( array(
-                                'prev_text'     => __( 'Previous', 'ucef' ),
-                                'next_text'     => __( 'Next', 'ucef' ),
+                                'prev_text'     => esc_html__( 'Previous', 'ucef' ),
+                                'next_text'     => esc_html__( 'Next', 'ucef' ),
                             ));
 
                         else:
                             ?>
-                                <p><?php _e( 'Nothing to display', 'ucef' ); ?></p>
+                                <p><?php esc_html_e( 'Nothing to display', 'ucef' ); ?></p>
                             <?php
                         endif;
                     ?>

@@ -12,7 +12,7 @@ get_header();
     <main>
         <div class="container">
             <div class="row">
-                <h1><?php _e( 'Search result for', 'ucef' ); ?>: <?php echo get_search_query(); ?></h1>
+                <h1><?php esc_html_e( 'Search result for', 'ucef' ); ?>: <?php echo get_search_query(); ?></h1>
 
                 <?php
                     get_search_form();
@@ -27,13 +27,13 @@ get_header();
 
                         // We're using numeric page navigation here
                         the_posts_pagination( array(
-                            'prev_text'     => __( 'Previous', 'ucef' ),
-                            'next_text'     => __( 'Next', 'ucef' ),
+                            'prev_text'     => esc_html__( 'Previous', 'ucef' ),
+                            'next_text'     => esc_html__( 'Next', 'ucef' ),
                         ));
 
                     else:
                         ?>
-                            <p><?php _e( 'There are no results for your query', 'ucef' ); ?></p>
+                            <p><?php esc_html_e( 'There are no results for your query', 'ucef' ); ?></p>
                         <?php
                     endif;
                 ?>
