@@ -4,7 +4,8 @@
 	"description": "ecommerce theme for wordpress",
 	"scripts": {
 		"dev": "webpack-dev-server",
-		"build": "webpack --watch"
+		"build": "webpack --watch",
+		"buildunmini": "webpack"
 	},
 	"author": "youssef bouhlal",
 	"license": "ISC",

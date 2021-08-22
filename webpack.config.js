@@ -99,20 +99,52 @@ if (currentTask == "dev") {
 /**
  * EXCUTE IN PRODUCTION MODE
  */
+// if (currentTask == "build") {
+//     cssConfig.use.unshift(MiniCssExtractPlugin.loader)
+//     postCSSPlugins.push(require("cssnano"))
+//     config.output = {
+//         publicPath: `/wp-content/themes/${themeFolderName}/assets/dist/bundled-assets/`,
+//         filename: "[name].js",
+//         chunkFilename: "[name].js",
+//         path: path.resolve(__dirname, "assets/dist/bundled-assets")
+//     }
+//     config.mode = "production"
+//     config.optimization = {
+//         splitChunks: { chunks: "all" }
+//     }
+//     config.plugins.push(new CleanWebpackPlugin(), new MiniCssExtractPlugin({ filename: "[name].css" }), new ManifestPlugin({ publicPath: "" }) )
+// }
+
 if (currentTask == "build") {
     cssConfig.use.unshift(MiniCssExtractPlugin.loader)
     postCSSPlugins.push(require("cssnano"))
     config.output = {
         publicPath: `/wp-content/themes/${themeFolderName}/assets/dist/bundled-assets/`,
-        filename: "[name].js",
-        chunkFilename: "[name].js",
+        filename: "js/[name].min.js",
+        chunkFilename: "vendors/[name].min.js",
         path: path.resolve(__dirname, "assets/dist/bundled-assets")
     }
     config.mode = "production"
     config.optimization = {
         splitChunks: { chunks: "all" }
     }
-    config.plugins.push(new CleanWebpackPlugin(), new MiniCssExtractPlugin({ filename: "[name].css" }), new ManifestPlugin({ publicPath: "" }) )
+    config.plugins.push(new CleanWebpackPlugin(), new MiniCssExtractPlugin({ filename: "css/[name].min.css" }), new ManifestPlugin({ publicPath: "" }) )
+}
+
+if (currentTask == "buildunmini") {
+    cssConfig.use.unshift(MiniCssExtractPlugin.loader)
+    config.output = {
+        publicPath: `/wp-content/themes/${themeFolderName}/assets/dist/bundled-assets/`,
+        filename: "js/[name].js",
+        chunkFilename: "vendors/[name].js",
+        path: path.resolve(__dirname, "assets/dist/bundled-assets")
+    }
+    config.mode = "production"
+    config.optimization = {
+        minimize: false,
+        splitChunks: { chunks: "all" }
+    }
+    config.plugins.push( new MiniCssExtractPlugin({ filename: "css/[name].css" }), new ManifestPlugin({ publicPath: "" }) )
 }
 
 module.exports = config
